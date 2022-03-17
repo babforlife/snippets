@@ -1,3 +1,6 @@
+// Query by Example is useful when a request with dynamic attributes is needed. If an attribute is null, it is ignored by default.
+// With ExampleMatcher we can choose to search for every null attribute but not specific ones.
+// I used Specification to include specific null attributes in the search.
 public class QueryByExample {
   
 	public List<Vague> rechercher(RechercheDto recherche) throws ParseException {
