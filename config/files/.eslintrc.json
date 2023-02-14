@@ -1,0 +1,100 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "@typescript-eslint/brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "@typescript-eslint/explicit-function-return-type": [
+      "error"
+    ],
+    "@typescript-eslint/member-ordering": [
+      "error",
+      {
+        "default": {
+          "memberTypes": [
+            "signature",
+            "field",
+            "constructor",
+            "static-method",
+            "public-method",
+            "protected-method",
+            "private-method",
+            "method"
+          ],
+          "order": "alphabetically"
+        }
+      }
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^(_|global)"
+      }
+    ],
+    "capitalized-comments": "off",
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "curly": [
+      "error",
+      "multi"
+    ],
+    "func-names": [
+      "error",
+      "always"
+    ],
+    "import/no-unassigned-import": "off",
+    "indent": [
+      "error",
+      2
+    ],
+    "lines-between-class-members": "off",
+    "max-statements-per-line": "off",
+    "no-console": "off",
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "padding-line-between-statements": "off",
+    "quote-props": [
+      "error",
+      "consistent-as-needed"
+    ],
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "semi": [
+      "error",
+      "never"
+    ],
+    "space-before-function-paren": [
+      "error",
+      "always"
+    ]
+  }
+}
